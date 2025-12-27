@@ -2385,18 +2385,19 @@ html, body {
   overflow-x: hidden;
 }
 
-/* =====================
-   MOBILE OVERRIDE REAL
-===================== */
+/* =====================================================
+   MOBILE OVERRIDE DEFINITIVO — DEBE IR AL FINAL
+===================================================== */
 @media (max-width: 768px) {
 
-  /* Evitar desbordes fantasma */
+  /* ================= RESET Y OVERFLOW ================= */
+
   html, body {
-    width: 100%;
+    width: 100% !important;
     overflow-x: hidden !important;
   }
 
-  /* ================= VIDEO ================= */
+  /* ================= HEADER SECTION ================= */
 
   #header-section {
     position: relative !important;
@@ -2404,14 +2405,17 @@ html, body {
     overflow: hidden !important;
   }
 
+  /* ================= VIDEO ================= */
+
   #newBackground {
     position: relative !important;
     inset: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    transform: none !important;
     top: auto !important;
     left: auto !important;
+    transform: none !important;
+    z-index: 1 !important;
   }
 
   .background-video {
@@ -2420,13 +2424,16 @@ html, body {
     object-fit: cover !important;
   }
 
-  /* ================= NAV MENU ================= */
+  /* ================= NAV MENU SOBRE EL VIDEO ================= */
 
   #navMenu {
     position: absolute !important;
-    top: 5rem !important;
+    top: 0 !important;
     left: 50% !important;
-    transform: translateX(-50%) !important;
+
+    /* 🔽 AQUÍ SE BAJA EL MENÚ */
+    transform: translate(-50%, 3rem) !important;
+
     width: 92% !important;
     max-width: 360px !important;
     z-index: 20 !important;
@@ -2443,27 +2450,34 @@ html, body {
   .nav-item {
     font-size: 0.85rem !important;
     padding: 0.4rem 0.6rem !important;
+    white-space: nowrap !important;
   }
 
-  /* ================= HEADER ================= */
+  /* ================= HEADER FIJO ================= */
 
   header {
     z-index: 30 !important;
     padding: 0.6rem 0.8rem !important;
   }
 
-.header-nav {
-  flex-wrap: nowrap !important;
-  justify-content: flex-start !important;
-  gap: 0.4rem !important;
-  font-size: 0.7rem !important;
-  transform: translateX(-6px) !important; /* corre a la izquierda */
-}
-    .header-nav a {
-  font-size: 0.7rem !important;
-  padding: 0.2rem 0.25rem !important;
-  white-space: nowrap !important;
-}
+  /* HEADER NAV — UNA SOLA FILA SÍ O SÍ */
+  header .header-nav {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    gap: 0.35rem !important;
+    overflow-x: hidden !important;
+
+    /* 🔽 ajuste fino a la izquierda */
+    transform: translateX(-8px) !important;
+  }
+
+  header .header-nav a {
+    font-size: 0.65rem !important;
+    padding: 0.15rem 0.25rem !important;
+    white-space: nowrap !important;
+  }
+
   /* ================= DARK MODE BUTTON ================= */
 
   #darkModeToggle {
@@ -2478,5 +2492,4 @@ html, body {
     padding: 3rem 1.2rem !important;
   }
 }
-
 
