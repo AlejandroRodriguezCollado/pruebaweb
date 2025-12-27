@@ -2395,7 +2395,6 @@ html, body {
   html, body {
     width: 100% !important;
     overflow-x: hidden !important;
-    background: red !important;
   }
 
   /* ================= HEADER SECTION ================= */
@@ -2474,7 +2473,7 @@ html, body {
   }
 
   header .header-nav a {
-    font-size: 0.65rem !important;
+    font-size: 0.4rem !important;
     padding: 0.15rem 0.25rem !important;
     white-space: nowrap !important;
   }
