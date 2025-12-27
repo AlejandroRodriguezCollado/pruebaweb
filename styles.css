@@ -2469,7 +2469,7 @@ html, body {
     overflow-x: hidden !important;
 
     /* 🔽 ajuste fino a la izquierda */
-    transform: translateX(-3px) !important;
+    /*transform: translateX(-3px) !important;*/
   }
 
   header .header-nav a {
@@ -2481,7 +2481,7 @@ html, body {
   /* ================= DARK MODE BUTTON ================= */
 
   #darkModeToggle {
-    top: 0.5rem !important;
+    top: 3rem !important;
     right: 0.5rem !important;
     z-index: 40 !important;
   }
