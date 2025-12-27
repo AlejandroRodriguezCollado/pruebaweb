@@ -2452,12 +2452,18 @@ html, body {
     padding: 0.6rem 0.8rem !important;
   }
 
-  .header-nav {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 0.5rem !important;
-  }
-
+.header-nav {
+  flex-wrap: nowrap !important;
+  justify-content: flex-start !important;
+  gap: 0.4rem !important;
+  font-size: 0.7rem !important;
+  transform: translateX(-6px) !important; /* corre a la izquierda */
+}
+    .header-nav a {
+  font-size: 0.7rem !important;
+  padding: 0.2rem 0.25rem !important;
+  white-space: nowrap !important;
+}
   /* ================= DARK MODE BUTTON ================= */
 
   #darkModeToggle {
