@@ -11,7 +11,7 @@
       gtag('config', 'G-PXEQ8BRWKN');
     </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mariona Guisado</title>
     <link rel="preload" href="sobre-mi-bg.jpg" as="image">
     <link rel="preload" href="contacte-bg.jpg" as="image">
@@ -50,20 +50,22 @@
             <section id="header-section" class="header-section">
                 <h1 id="pageTitle" class="page-title">Mariona Guisado</h1>
                 <div class="new-background" id="newBackground">
-                    <video class="background-video" autoplay muted loop>
+                    <video class="background-video" autoplay muted loop playsinline webkit-playsinline>
                         <source src="por.MOV" type="video/mp4">
+                        <!-- Fallback para navegadores que no soportan video -->
+                        <img src="foto.jpg" alt="Mariona Guisado" style="width:100%;height:100%;object-fit:cover;">
                     </video>
                 </div>
             
                 <h1 class="name">Mariona Guisado</h1>
             
                 <div class="nav-menu" id="navMenu">
-                    <a href="#sobre-mi" class="nav-item">Professional Profile</a>
-                    <a href="#experiencia" class="nav-item">Experience & Leadership</a>
+                    <a href="#sobre-mi" class="nav-item">Profile</a>
+                    <a href="#experiencia" class="nav-item">Experience</a>
                     <a href="#formacio" class="nav-item">Education</a>
                     <a href="#habilitats" class="nav-item">Skills</a>
                     <a href="#projectes" class="nav-item">Projects</a>
-                    <a href="#actividades" class="nav-item">Extracurriculars & Volunteering</a>
+                    <a href="#actividades" class="nav-item">Activities</a>
                     <a href="#contacte" class="nav-item">Contact</a>
                 </div>
             </section>
@@ -515,7 +517,7 @@
                         <p class="contact-subtitle">I'm always open to discussing new opportunities, projects, or just having a chat about technology and data engineering.</p>
                     </div>
                     
-                    <form class="contacte-form" id="contactForm">
+                    <form class="contacte-form" id="contactForm" action="https://formspree.io/f/movovjkw" method="POST">
                         <h3 style="color: var(--primary-color); margin-bottom: 15px; font-weight: 500;">Send me a message</h3>
                         <div class="form-group">
                             <label for="contact-name">Name</label>
@@ -557,8 +559,7 @@
                             </div>
                             <span class="social-name">Instagram</span>
                         </a>
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DXDwSWwznjHbSSkqBbhPJwMgLDRmJsnhXLHKwjNwknvdfpwkGzSLNjXzVKXfTvcqTQNdnZBMlGSdKfPGrdNhvJgGDBSDHwNskwQWXzGpQJklNhBFnWvvfknV" class="social-icon" target="_blank">
-                            <div class="social-icon-circle">
+                        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=marionagsd@gmail.com&su=Contacto%20desde%20portfolio&body=Hola%20Mariona," class="social-icon" target="_blank">                            <div class="social-icon-circle">
                                 <i class="fas fa-mail-bulk"></i>
                             </div>
                             <span class="social-name">Gmail</span>
