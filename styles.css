@@ -2387,77 +2387,92 @@ html, body {
 /* =====================
    MOBILE RESPONSIVE
 ===================== */
+/* =====================
+   MOBILE OVERRIDE REAL
+   (FINAL DEL ARCHIVO)
+===================== */
 @media (max-width: 768px) {
 
-  /* ---------- Layout general ---------- */
-  body {
-    padding: 0;
+  /* Evitar desbordes fantasma */
+  html, body {
+    width: 100%;
+    overflow-x: hidden !important;
   }
 
-  .section {
-    padding: 3rem 1.2rem;
-  }
+  /* ================= VIDEO ================= */
 
-  /* ---------- Header ---------- */
-  header {
-    padding: 0.8rem 1rem;
-  }
-
-  .header-nav {
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    justify-content: center;
-  }
-
-  /* ---------- Dark mode button ---------- */
-  #darkModeToggle {
-    top: 0.7rem;
-    right: 0.7rem;
-    z-index: 2000;
-  }
-
-  header {
-    z-index: 1500;
-  }
-
-  /* ---------- VIDEO + NAV MENU ---------- */
   #header-section {
-    position: relative;
-    overflow: hidden;
+    position: relative !important;
+    height: 100vh !important;
+    overflow: hidden !important;
   }
 
   #newBackground {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
+    position: relative !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
   }
+
+  .background-video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* ================= NAV MENU ================= */
 
   #navMenu {
-    position: absolute;
-    top: 1.2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    max-width: 360px;
-    z-index: 1000;
+    position: absolute !important;
+    top: 1rem !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 92% !important;
+    max-width: 360px !important;
+    z-index: 20 !important;
   }
 
-  /* ---------- Menu items ---------- */
   .nav-menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.6rem;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.6rem !important;
+    padding: 0.8rem !important;
   }
 
   .nav-item {
-    padding: 0.4rem 0.7rem;
-    font-size: 0.85rem;
+    font-size: 0.85rem !important;
+    padding: 0.4rem 0.6rem !important;
   }
 
-  /* ---------- About / text ---------- */
-  #typed-text {
-    font-size: 0.95rem;
-    line-height: 1.5;
+  /* ================= HEADER ================= */
+
+  header {
+    z-index: 30 !important;
+    padding: 0.6rem 0.8rem !important;
+  }
+
+  .header-nav {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+  }
+
+  /* ================= DARK MODE BUTTON ================= */
+
+  #darkModeToggle {
+    top: 0.5rem !important;
+    right: 0.5rem !important;
+    z-index: 40 !important;
+  }
+
+  /* ================= SECCIONES ================= */
+
+  .section {
+    padding: 3rem 1.2rem !important;
   }
 }
+
