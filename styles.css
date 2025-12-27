@@ -2432,7 +2432,7 @@ html, body {
     left: 50% !important;
 
     /* 🔽 AQUÍ SE BAJA EL MENÚ */
-    transform: translate(-50%, 3rem) !important;
+    transform: translate(-50%, 10rem) !important;
 
     width: 92% !important;
     max-width: 360px !important;
