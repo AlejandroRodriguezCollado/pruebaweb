@@ -2427,7 +2427,7 @@ html, body {
 
   #navMenu {
     position: absolute !important;
-    top: 1rem !important;
+    top: 5rem !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     width: 92% !important;
