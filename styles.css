@@ -2469,7 +2469,7 @@ html, body {
     overflow-x: hidden !important;
 
     /* 🔽 ajuste fino a la izquierda */
-    transform: translateX(-8px) !important;
+    transform: translateX(-3px) !important;
   }
 
   header .header-nav a {
