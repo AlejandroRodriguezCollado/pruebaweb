@@ -2384,12 +2384,9 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
-/* =====================
-   MOBILE RESPONSIVE
-===================== */
+
 /* =====================
    MOBILE OVERRIDE REAL
-   (FINAL DEL ARCHIVO)
 ===================== */
 @media (max-width: 768px) {
 
@@ -2427,7 +2424,7 @@ html, body {
 
   #navMenu {
     position: absolute !important;
-    top: 50rem !important;
+    top: 1rem !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     width: 92% !important;
@@ -2475,4 +2472,5 @@ html, body {
     padding: 3rem 1.2rem !important;
   }
 }
+
 
