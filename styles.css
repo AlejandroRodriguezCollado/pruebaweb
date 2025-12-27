@@ -2395,6 +2395,7 @@ html, body {
   html, body {
     width: 100% !important;
     overflow-x: hidden !important;
+    background: red !important;
   }
 
   /* ================= HEADER SECTION ================= */
